@@ -1,0 +1,19 @@
+Bài 3 : Thiết kế hệ thống IoT thông minh và quản lý cấu hình 
+Mô hình DIKW cho hệ thống trang trại:
+1. Data (Dữ liệu thô):
+Thu thập thông số môi trường như:Độ ẩm đất, độ ẩm không khí, nhiệt độ môi trường, cường độ ánh sáng, lưu lượng nước
+2. Information (Thông tin):
+ung cấp thông tin cho chủ vườn như (ví dụ: nhiệt độ hiện tại  31.5 độ C, độ ẩm đất 50%)
+3. Knowledge (Hiểu biết)
+Thiết lập logic điều khiển tự động , tính toán ,xác định nhiệt độ là 31.5 độ C, độ ẩm đất 50% thì sẽ không bật máy bơm vì nhiệt độ dưới 35 độ C
+4. Wisdom (trí tuệ):
+Hệ thống sẽ tự xác định có nên tưới nước không như 31.5 độ C, độ ẩm đất 50% ,hệ thống tính toán nên tưới hoặc không tưới để tránh cây bị ngập úng hoặc chết do thiếu nước.
+Dự đoán thông qua dự báo thời tiết ngày mai để tối ưu hóa việc tưới nước sao cho tốt nhất.
+
+Cách tránh bẫy dữ liệu:
+Bẫy 1:
+Tạo thư mục Backup cho ứng dụng để chứa file.env để khỏi bị người dùng bấm nhầm xóa mất nó
+Tạo thư mục Cache cho ứng dụng để dọn rác ,dọn dẹp rác trong ứng dụng
+Bẫy 2:
+Hệ thống sinh ra 50 MB dữ liệu/ngày thì 1 năm là 18250 MB = 18.25 GB
+Tính toán dung lượng ổ cứng phù hợp lấy 18.25 GB chia 70% = 26.07 GB , nên cần ổ cứng trên 26 GB trở lên như như SSD 128GB hoặc 256GB, HDD 500 GB - 1 TB
